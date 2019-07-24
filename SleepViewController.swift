@@ -13,14 +13,26 @@ class sleepViewController: UIViewController, UITableViewDataSource, UITableViewD
     let audio_context = gvr_audio_create(Int32(GVR_AUDIO_RENDERING_BINAURAL_HIGH_QUALITY.rawValue))
 
     let array = ["Nothing", "River", "Goats"]
-    var sound = gvr_audio_source_id()
-
+    var audio1 = gvr_audio_source_id()
+    var audio2 = gvr_audio_source_id()
+    var audio3 = gvr_audio_source_id()
+    var audio4 = gvr_audio_source_id()
+    var audio5 = gvr_audio_source_id()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sound = gvr_audio_source_id(gvr_audio_create_sound_object(audio_context, "Air Con.wav")) //ambisonic
-        gvr_audio_set_sound_volume(audio_context, sound, 0.5)
-        gvr_audio_play_sound(audio_context, sound, true)
+        audio1 = gvr_audio_source_id(gvr_audio_create_sound_object(audio_context, "Air Con.wav")) //ambisonic
+        gvr_audio_set_sound_volume(audio_context, audio1, 0.5)
+        audio2 = gvr_audio_source_id(gvr_audio_create_sound_object(audio_context, "Air Con.wav"))
+        gvr_audio_set_sound_volume(audio_context, audio2, 0.5)
+        audio3 = gvr_audio_source_id(gvr_audio_create_sound_object(audio_context, "Air Con.wav"))
+        gvr_audio_set_sound_volume(audio_context, audio3, 0.5)
+        audio4 = gvr_audio_source_id(gvr_audio_create_sound_object(audio_context, "Air Con.wav"))
+        gvr_audio_set_sound_volume(audio_context, audio4, 0.5)
+        audio5 = gvr_audio_source_id(gvr_audio_create_sound_object(audio_context, "Air Con.wav"))
+        gvr_audio_set_sound_volume(audio_context, audio5, 0.5)
+        
         // Do any additional setup after loading the view.
     }
     
