@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E43577B40E70FAC5079A7EF09EA68876 /* GVRAudioSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 202B904D802B9F7C2DB605C950F3E88F /* Build configuration list for PBXAggregateTarget "GVRAudioSDK" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GVRAudioSDK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0C64A5EE57CAAFB7D2B8B917816AE022 /* Pods-GoogleVRSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AAACD1C39ECBB26D77670DC0F99AAA23 /* Pods-GoogleVRSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1517BC6801E3287EFE49D68C7A964470 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		56E61E4B53267AEE235884E6B4BDE092 /* Pods-GoogleVRSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4300B66A879561C9E041E246D052AF17 /* Pods-GoogleVRSwift-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0049C778CE795038B5AB518256E3B94C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E43577B40E70FAC5079A7EF09EA68876;
+			remoteInfo = GVRAudioSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0346E79E74D4264CCBF0CD9F155C23B1 /* GVRAudioSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GVRAudioSDK.xcconfig; sourceTree = "<group>"; };
+		1CDBB524B85E84B28CE5523D7357CA91 /* Pods-GoogleVRSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoogleVRSwift-Info.plist"; sourceTree = "<group>"; };
+		207CE86747772E3060B14C2E4F7133B6 /* Pods-GoogleVRSwift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoogleVRSwift-acknowledgements.plist"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4300B66A879561C9E041E246D052AF17 /* Pods-GoogleVRSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoogleVRSwift-dummy.m"; sourceTree = "<group>"; };
+		5DDA6658C9D8C1EC216AECB9A4D0914A /* gvr_audio_surround.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_audio_surround.h; path = Sources/vr/gvr/capi/include/gvr_audio_surround.h; sourceTree = "<group>"; };
+		691363F4A726B7F5F5EE3646D55D4621 /* Pods-GoogleVRSwift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoogleVRSwift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6D7762C58B03851C8DE87A45CD874460 /* GVRAudioEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRAudioEngine.h; path = Sources/GVRAudioEngine.h; sourceTree = "<group>"; };
+		8440FD0F4B28F40017B509EA77D8B385 /* gvr_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_types.h; path = Sources/vr/gvr/capi/include/gvr_types.h; sourceTree = "<group>"; };
+		96336B41105C7B9C15459362A69B6996 /* Pods_GoogleVRSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GoogleVRSwift.framework; path = "Pods-GoogleVRSwift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AAACD1C39ECBB26D77670DC0F99AAA23 /* Pods-GoogleVRSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoogleVRSwift-umbrella.h"; sourceTree = "<group>"; };
+		B7D028C33536AE3600FF8C240D62DF5F /* Pods-GoogleVRSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleVRSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		B7FFA9EFE9971E0492C919BB995E468C /* gvr_audio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_audio.h; path = Sources/vr/gvr/capi/include/gvr_audio.h; sourceTree = "<group>"; };
+		CC0105ADF4350E1369ABD0657909C254 /* libGVRAudioSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGVRAudioSDK.a; path = Libraries/libGVRAudioSDK.a; sourceTree = "<group>"; };
+		CFCA4CA25AB29B9993510DC25B686BE3 /* Pods-GoogleVRSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GoogleVRSwift.modulemap"; sourceTree = "<group>"; };
+		DD19FDFF74F57B8F7AC41B6CC9AF4045 /* Pods-GoogleVRSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleVRSwift.release.xcconfig"; sourceTree = "<group>"; };
+		ED6E8E241760C7452D070EA4CE153850 /* gvr_version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_version.h; path = Sources/vr/gvr/capi/include/gvr_version.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CBA7D1F94C75369038154E54684A448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1517BC6801E3287EFE49D68C7A964470 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6649B08675037257D7DE85C3FEB23735 /* Pods-GoogleVRSwift */ = {
+			isa = PBXGroup;
+			children = (
+				CFCA4CA25AB29B9993510DC25B686BE3 /* Pods-GoogleVRSwift.modulemap */,
+				691363F4A726B7F5F5EE3646D55D4621 /* Pods-GoogleVRSwift-acknowledgements.markdown */,
+				207CE86747772E3060B14C2E4F7133B6 /* Pods-GoogleVRSwift-acknowledgements.plist */,
+				4300B66A879561C9E041E246D052AF17 /* Pods-GoogleVRSwift-dummy.m */,
+				1CDBB524B85E84B28CE5523D7357CA91 /* Pods-GoogleVRSwift-Info.plist */,
+				AAACD1C39ECBB26D77670DC0F99AAA23 /* Pods-GoogleVRSwift-umbrella.h */,
+				B7D028C33536AE3600FF8C240D62DF5F /* Pods-GoogleVRSwift.debug.xcconfig */,
+				DD19FDFF74F57B8F7AC41B6CC9AF4045 /* Pods-GoogleVRSwift.release.xcconfig */,
+			);
+			name = "Pods-GoogleVRSwift";
+			path = "Target Support Files/Pods-GoogleVRSwift";
+			sourceTree = "<group>";
+		};
+		7AC84699C1087C719359EB96FD5731BB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6649B08675037257D7DE85C3FEB23735 /* Pods-GoogleVRSwift */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9358A4BDEA15E152544201E92E752402 /* GVRAudioSDK */ = {
+			isa = PBXGroup;
+			children = (
+				B7FFA9EFE9971E0492C919BB995E468C /* gvr_audio.h */,
+				5DDA6658C9D8C1EC216AECB9A4D0914A /* gvr_audio_surround.h */,
+				8440FD0F4B28F40017B509EA77D8B385 /* gvr_types.h */,
+				ED6E8E241760C7452D070EA4CE153850 /* gvr_version.h */,
+				6D7762C58B03851C8DE87A45CD874460 /* GVRAudioEngine.h */,
+				DF3C8BD96BFAF7B871B9A5869DA47D8D /* Frameworks */,
+				D98793BADE8DBE4A87BF28C8BC422A01 /* Support Files */,
+			);
+			name = GVRAudioSDK;
+			path = GVRAudioSDK;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DF5784D46E860162CCAF5CBE033D93C5 /* Pods */,
+				FB8FD9DD4F4CB4B5D511B923134C31DA /* Products */,
+				7AC84699C1087C719359EB96FD5731BB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D98793BADE8DBE4A87BF28C8BC422A01 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0346E79E74D4264CCBF0CD9F155C23B1 /* GVRAudioSDK.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GVRAudioSDK";
+			sourceTree = "<group>";
+		};
+		DF3C8BD96BFAF7B871B9A5869DA47D8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC0105ADF4350E1369ABD0657909C254 /* libGVRAudioSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF5784D46E860162CCAF5CBE033D93C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9358A4BDEA15E152544201E92E752402 /* GVRAudioSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB8FD9DD4F4CB4B5D511B923134C31DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96336B41105C7B9C15459362A69B6996 /* Pods_GoogleVRSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EDA54BBE70BB9F4920ECBFB22F66A5AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C64A5EE57CAAFB7D2B8B917816AE022 /* Pods-GoogleVRSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		032DA8AE9CDB0EF4CC3459D8F8CF1FBC /* Pods-GoogleVRSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B10FD4B9FF4279E16776081B0212401 /* Build configuration list for PBXNativeTarget "Pods-GoogleVRSwift" */;
+			buildPhases = (
+				EDA54BBE70BB9F4920ECBFB22F66A5AA /* Headers */,
+				CF7CBB9CB37D714EAFCCB99A6DA50954 /* Sources */,
+				2CBA7D1F94C75369038154E54684A448 /* Frameworks */,
+				CCED72EF79A41B80F76751C13289B152 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D4104087E9F10D2562E772E5D3D3006 /* PBXTargetDependency */,
+			);
+			name = "Pods-GoogleVRSwift";
+			productName = "Pods-GoogleVRSwift";
+			productReference = 96336B41105C7B9C15459362A69B6996 /* Pods_GoogleVRSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FB8FD9DD4F4CB4B5D511B923134C31DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E43577B40E70FAC5079A7EF09EA68876 /* GVRAudioSDK */,
+				032DA8AE9CDB0EF4CC3459D8F8CF1FBC /* Pods-GoogleVRSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCED72EF79A41B80F76751C13289B152 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF7CBB9CB37D714EAFCCB99A6DA50954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56E61E4B53267AEE235884E6B4BDE092 /* Pods-GoogleVRSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D4104087E9F10D2562E772E5D3D3006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GVRAudioSDK;
+			target = E43577B40E70FAC5079A7EF09EA68876 /* GVRAudioSDK */;
+			targetProxy = 0049C778CE795038B5AB518256E3B94C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		246FAB5418DD397D0A1B21A2E5366F59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD19FDFF74F57B8F7AC41B6CC9AF4045 /* Pods-GoogleVRSwift.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoogleVRSwift/Pods-GoogleVRSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoogleVRSwift/Pods-GoogleVRSwift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4F85BF267DD394901B529F60FADF295F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7D028C33536AE3600FF8C240D62DF5F /* Pods-GoogleVRSwift.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoogleVRSwift/Pods-GoogleVRSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoogleVRSwift/Pods-GoogleVRSwift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B9ACF423D36170A3629E8F2339EE63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0346E79E74D4264CCBF0CD9F155C23B1 /* GVRAudioSDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFCF80CDF663EA40A90F5AC2DA15E88F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0346E79E74D4264CCBF0CD9F155C23B1 /* GVRAudioSDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		202B904D802B9F7C2DB605C950F3E88F /* Build configuration list for PBXAggregateTarget "GVRAudioSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9ACF423D36170A3629E8F2339EE63B /* Debug */,
+				CFCF80CDF663EA40A90F5AC2DA15E88F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
+				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B10FD4B9FF4279E16776081B0212401 /* Build configuration list for PBXNativeTarget "Pods-GoogleVRSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F85BF267DD394901B529F60FADF295F /* Debug */,
+				246FAB5418DD397D0A1B21A2E5366F59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
