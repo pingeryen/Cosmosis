@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		1F25E59522E79C4E00AC1B34 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25E59422E79C4D00AC1B34 /* SecondViewController.swift */; };
 		1F25E59722E7BB8200AC1B34 /* Screen Shot 2019-07-23 at 3.01.55 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E59622E7BB8100AC1B34 /* Screen Shot 2019-07-23 at 3.01.55 PM.png */; };
-		1F25E59B22E7DED000AC1B34 /* sleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25E59A22E7DED000AC1B34 /* sleepViewController.swift */; };
-		1F25E59D22E8BB9500AC1B34 /* Start.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E59C22E8BB9500AC1B34 /* Start.png */; };
-		1F46496C22E630CA004E9A9A /* Air Con.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F46496B22E630CA004E9A9A /* Air Con.wav */; };
+		1F25E59B22E7DED000AC1B34 /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25E59A22E7DED000AC1B34 /* SleepViewController.swift */; };
+		1F25E5A122E8C80200AC1B34 /* Air_Con.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5A022E8C80100AC1B34 /* Air_Con.wav */; };
+		1F25E5A322E8C85E00AC1B34 /* Ambient_Car.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5A222E8C85E00AC1B34 /* Ambient_Car.wav */; };
+		1F25E5A522E8C86500AC1B34 /* Goats.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5A422E8C86500AC1B34 /* Goats.wav */; };
+		1F25E5A722E8C8AA00AC1B34 /* River.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5A622E8C8AA00AC1B34 /* River.wav */; };
+		1F25E5A922E8CF6100AC1B34 /* Start.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5A822E8CF6100AC1B34 /* Start.png */; };
+		1F25E5AB22EA12C600AC1B34 /* MyClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25E5AA22EA12C600AC1B34 /* MyClasses.swift */; };
 		1F46496E22E63165004E9A9A /* 190717_032.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 1F46496D22E63165004E9A9A /* 190717_032.WAV */; };
 		1F55E02222E56A7C007F9D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55E02122E56A7C007F9D59 /* AppDelegate.swift */; };
 		1F55E02422E56A7C007F9D59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55E02322E56A7C007F9D59 /* ViewController.swift */; };
@@ -25,9 +29,13 @@
 		142F5DFF41E339CD574F82FF /* Pods_GoogleVRSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleVRSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F25E59422E79C4D00AC1B34 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../SecondViewController.swift; sourceTree = "<group>"; };
 		1F25E59622E7BB8100AC1B34 /* Screen Shot 2019-07-23 at 3.01.55 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2019-07-23 at 3.01.55 PM.png"; sourceTree = "<group>"; };
-		1F25E59A22E7DED000AC1B34 /* sleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = sleepViewController.swift; path = ../sleepViewController.swift; sourceTree = "<group>"; };
-		1F25E59C22E8BB9500AC1B34 /* Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start.png; sourceTree = SOURCE_ROOT; };
-		1F46496B22E630CA004E9A9A /* Air Con.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Air Con.wav"; path = "../../7.11.19 Audio/Highlighted Files/Air Con.wav"; sourceTree = "<group>"; };
+		1F25E59A22E7DED000AC1B34 /* SleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SleepViewController.swift; path = ../SleepViewController.swift; sourceTree = "<group>"; };
+		1F25E5A022E8C80100AC1B34 /* Air_Con.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Air_Con.wav; sourceTree = "<group>"; };
+		1F25E5A222E8C85E00AC1B34 /* Ambient_Car.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ambient_Car.wav; sourceTree = "<group>"; };
+		1F25E5A422E8C86500AC1B34 /* Goats.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Goats.wav; sourceTree = "<group>"; };
+		1F25E5A622E8C8AA00AC1B34 /* River.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = River.wav; sourceTree = "<group>"; };
+		1F25E5A822E8CF6100AC1B34 /* Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start.png; sourceTree = "<group>"; };
+		1F25E5AA22EA12C600AC1B34 /* MyClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClasses.swift; sourceTree = "<group>"; };
 		1F46496D22E63165004E9A9A /* 190717_032.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 190717_032.WAV; sourceTree = "<group>"; };
 		1F55E01E22E56A7C007F9D59 /* GoogleVRSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleVRSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F55E02122E56A7C007F9D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,18 +83,22 @@
 		1F55E02022E56A7C007F9D59 /* GoogleVRSwift */ = {
 			isa = PBXGroup;
 			children = (
-				1F25E59A22E7DED000AC1B34 /* sleepViewController.swift */,
-				1F25E59C22E8BB9500AC1B34 /* Start.png */,
+				1F25E59A22E7DED000AC1B34 /* SleepViewController.swift */,
+				1F25E5A822E8CF6100AC1B34 /* Start.png */,
 				1F25E59622E7BB8100AC1B34 /* Screen Shot 2019-07-23 at 3.01.55 PM.png */,
 				1F25E59422E79C4D00AC1B34 /* SecondViewController.swift */,
 				1F46496D22E63165004E9A9A /* 190717_032.WAV */,
-				1F46496B22E630CA004E9A9A /* Air Con.wav */,
 				1F55E02122E56A7C007F9D59 /* AppDelegate.swift */,
 				1F55E02322E56A7C007F9D59 /* ViewController.swift */,
+				1F25E5A022E8C80100AC1B34 /* Air_Con.wav */,
+				1F25E5A222E8C85E00AC1B34 /* Ambient_Car.wav */,
+				1F25E5A422E8C86500AC1B34 /* Goats.wav */,
+				1F25E5A622E8C8AA00AC1B34 /* River.wav */,
 				1F55E02522E56A7C007F9D59 /* Main.storyboard */,
 				1F55E02822E56A7D007F9D59 /* Assets.xcassets */,
 				1F55E02A22E56A7D007F9D59 /* LaunchScreen.storyboard */,
 				1F55E02D22E56A7D007F9D59 /* Info.plist */,
+				1F25E5AA22EA12C600AC1B34 /* MyClasses.swift */,
 			);
 			path = GoogleVRSwift;
 			sourceTree = "<group>";
@@ -167,10 +179,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F25E5A322E8C85E00AC1B34 /* Ambient_Car.wav in Resources */,
+				1F25E5A522E8C86500AC1B34 /* Goats.wav in Resources */,
 				1F46496E22E63165004E9A9A /* 190717_032.WAV in Resources */,
-				1F46496C22E630CA004E9A9A /* Air Con.wav in Resources */,
-				1F25E59D22E8BB9500AC1B34 /* Start.png in Resources */,
+				1F25E5A722E8C8AA00AC1B34 /* River.wav in Resources */,
+				1F25E5A922E8CF6100AC1B34 /* Start.png in Resources */,
 				1F55E02C22E56A7D007F9D59 /* LaunchScreen.storyboard in Resources */,
+				1F25E5A122E8C80200AC1B34 /* Air_Con.wav in Resources */,
 				1F25E59722E7BB8200AC1B34 /* Screen Shot 2019-07-23 at 3.01.55 PM.png in Resources */,
 				1F55E02922E56A7D007F9D59 /* Assets.xcassets in Resources */,
 				1F55E02722E56A7C007F9D59 /* Main.storyboard in Resources */,
@@ -209,10 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F25E59B22E7DED000AC1B34 /* sleepViewController.swift in Sources */,
+				1F25E59B22E7DED000AC1B34 /* SleepViewController.swift in Sources */,
 				1F25E59522E79C4E00AC1B34 /* SecondViewController.swift in Sources */,
 				1F55E02422E56A7C007F9D59 /* ViewController.swift in Sources */,
 				1F55E02222E56A7C007F9D59 /* AppDelegate.swift in Sources */,
+				1F25E5AB22EA12C600AC1B34 /* MyClasses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
