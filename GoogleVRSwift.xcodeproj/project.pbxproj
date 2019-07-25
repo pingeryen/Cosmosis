@@ -16,6 +16,9 @@
 		1F25E5A722E8C8AA00AC1B34 /* River.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5A622E8C8AA00AC1B34 /* River.wav */; };
 		1F25E5A922E8CF6100AC1B34 /* Start.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5A822E8CF6100AC1B34 /* Start.png */; };
 		1F25E5AB22EA12C600AC1B34 /* MyClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25E5AA22EA12C600AC1B34 /* MyClasses.swift */; };
+		1F25E5AD22EA2CA900AC1B34 /* Ambient_Car_Preview.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5AC22EA2CA800AC1B34 /* Ambient_Car_Preview.wav */; };
+		1F25E5AF22EA2CB100AC1B34 /* River_Preview.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5AE22EA2CB100AC1B34 /* River_Preview.wav */; };
+		1F25E5B122EA2CBA00AC1B34 /* Goats_Preview.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5B022EA2CBA00AC1B34 /* Goats_Preview.wav */; };
 		1F46496E22E63165004E9A9A /* 190717_032.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 1F46496D22E63165004E9A9A /* 190717_032.WAV */; };
 		1F55E02222E56A7C007F9D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55E02122E56A7C007F9D59 /* AppDelegate.swift */; };
 		1F55E02422E56A7C007F9D59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55E02322E56A7C007F9D59 /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 		1F25E5A622E8C8AA00AC1B34 /* River.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = River.wav; sourceTree = "<group>"; };
 		1F25E5A822E8CF6100AC1B34 /* Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start.png; sourceTree = "<group>"; };
 		1F25E5AA22EA12C600AC1B34 /* MyClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClasses.swift; sourceTree = "<group>"; };
+		1F25E5AC22EA2CA800AC1B34 /* Ambient_Car_Preview.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ambient_Car_Preview.wav; sourceTree = "<group>"; };
+		1F25E5AE22EA2CB100AC1B34 /* River_Preview.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = River_Preview.wav; sourceTree = "<group>"; };
+		1F25E5B022EA2CBA00AC1B34 /* Goats_Preview.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Goats_Preview.wav; sourceTree = "<group>"; };
 		1F46496D22E63165004E9A9A /* 190717_032.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 190717_032.WAV; sourceTree = "<group>"; };
 		1F55E01E22E56A7C007F9D59 /* GoogleVRSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleVRSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F55E02122E56A7C007F9D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,9 +100,12 @@
 				1F25E5A222E8C85E00AC1B34 /* Ambient_Car.wav */,
 				1F25E5A422E8C86500AC1B34 /* Goats.wav */,
 				1F25E5A622E8C8AA00AC1B34 /* River.wav */,
+				1F25E5AC22EA2CA800AC1B34 /* Ambient_Car_Preview.wav */,
 				1F55E02522E56A7C007F9D59 /* Main.storyboard */,
 				1F55E02822E56A7D007F9D59 /* Assets.xcassets */,
+				1F25E5B022EA2CBA00AC1B34 /* Goats_Preview.wav */,
 				1F55E02A22E56A7D007F9D59 /* LaunchScreen.storyboard */,
+				1F25E5AE22EA2CB100AC1B34 /* River_Preview.wav */,
 				1F55E02D22E56A7D007F9D59 /* Info.plist */,
 				1F25E5AA22EA12C600AC1B34 /* MyClasses.swift */,
 			);
@@ -179,6 +188,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F25E5AD22EA2CA900AC1B34 /* Ambient_Car_Preview.wav in Resources */,
+				1F25E5B122EA2CBA00AC1B34 /* Goats_Preview.wav in Resources */,
 				1F25E5A322E8C85E00AC1B34 /* Ambient_Car.wav in Resources */,
 				1F25E5A522E8C86500AC1B34 /* Goats.wav in Resources */,
 				1F46496E22E63165004E9A9A /* 190717_032.WAV in Resources */,
@@ -188,6 +199,7 @@
 				1F25E5A122E8C80200AC1B34 /* Air_Con.wav in Resources */,
 				1F25E59722E7BB8200AC1B34 /* Screen Shot 2019-07-23 at 3.01.55 PM.png in Resources */,
 				1F55E02922E56A7D007F9D59 /* Assets.xcassets in Resources */,
+				1F25E5AF22EA2CB100AC1B34 /* River_Preview.wav in Resources */,
 				1F55E02722E56A7C007F9D59 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

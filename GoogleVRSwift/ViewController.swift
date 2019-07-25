@@ -17,8 +17,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sound = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Air_Con.wav")) //ambisonic
+        sound = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Ambient_Car.wav")) //ambisonic
         gvr_audio_set_sound_volume(audiocontext.audio_context, sound, 0.5)
+        
+
         
         
         

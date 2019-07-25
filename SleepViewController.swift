@@ -9,14 +9,14 @@ import UIKit
 
 class SleepViewController: UIViewController{
     
+    let audio_context = gvr_audio_create(Int32(GVR_AUDIO_RENDERING_BINAURAL_HIGH_QUALITY.rawValue))
+
     @IBOutlet weak var ambientTable: UITableView!
     
     var array = ["Ambient_Car", "River", "Goats", "", ""]
     var audio1 = gvr_audio_source_id()
     var audio2 = gvr_audio_source_id()
     var audio3 = gvr_audio_source_id()
-    var audio4 = gvr_audio_source_id()
-    var audio5 = gvr_audio_source_id()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,6 @@ class SleepViewController: UIViewController{
         gvr_audio_set_sound_volume(audiocontext.audio_context, audio2, 1)
         audio3 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Goats.wav"))
         gvr_audio_set_sound_volume(audiocontext.audio_context, audio3, 1)
-        gvr_audio_play_sound(audiocontext.audio_context, audio1, true)
         /*
         audio4 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, ".wav"))
         gvr_audio_set_sound_volume(audiocontext.audio_context, audio4, 0.5)
@@ -94,20 +93,20 @@ extension SleepViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let cell = tableView.cellForRow(at: indexPath)
         
-        var file : String = "\((cell?.textLabel?.text)!).wav"
+        let file : String = "\((cell?.textLabel?.text)!)_Preview.wav"
         
-        var audio = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, file))
+        let audio = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, file))
         print(file)
         gvr_audio_set_sound_object_position(audiocontext.audio_context, audio, 0, 0, 0)
         gvr_audio_play_sound(audiocontext.audio_context, audio, true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5), execute: {
+            gvr_audio_stop_sound(audiocontext.audio_context, audio)
+        })
         
-        /*
-         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-         gvr_audio_play_sound(self.audiocontext.audio_context, audio, false)
-         })
-         */
+        
         self.ambientTable.isHidden = false
     }
     
