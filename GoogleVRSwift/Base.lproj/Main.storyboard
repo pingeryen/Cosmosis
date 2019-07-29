@@ -179,9 +179,31 @@
                                 <color key="backgroundColor" red="1" green="0.72829249789999995" blue="0.51917363559999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
+                                    <action selector="nextAction:" destination="dGs-jD-qMr" eventType="touchUpInside" id="ii0-sc-83e"/>
                                     <segue destination="71y-sU-6dd" kind="show" id="23o-8S-Vjn"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bHS-Bn-X8h">
+                                <rect key="frame" x="14" y="440" width="347" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="dGs-jD-qMr" eventType="valueChanged" id="mX8-p6-QLi"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="500 Seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSs-q0-BOa">
+                                <rect key="frame" x="87" y="411" width="201" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOf-e3-SmI">
+                                <rect key="frame" x="152" y="382" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="104-iP-rkJ"/>
@@ -189,11 +211,12 @@
                     <connections>
                         <outlet property="ambientTable" destination="b70-Ba-we1" id="vQv-br-j2D"/>
                         <outlet property="soundpackTable" destination="GbM-nY-RAO" id="dJE-Vd-cUu"/>
+                        <outlet property="timerOutlet" destination="LSs-q0-BOa" id="Ca2-ua-6rX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbH-dp-hhm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1548" y="752"/>
+            <point key="canvasLocation" x="-1548" y="751.57421289355329"/>
         </scene>
         <!--Session View Controller-->
         <scene sceneID="xGo-01-XBK">
@@ -208,6 +231,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Stop"/>
                                 <connections>
+                                    <action selector="stopAction:" destination="71y-sU-6dd" eventType="touchUpInside" id="6nE-FA-9z1"/>
                                     <segue destination="poF-lJ-CrN" kind="presentation" modalTransitionStyle="crossDissolve" id="fGQ-7s-Xpp"/>
                                 </connections>
                             </button>
@@ -218,8 +242,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njy-0f-pdg">
-                                <rect key="frame" x="151" y="293" width="72" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njy-0f-pdg">
+                                <rect key="frame" x="100" y="293" width="175" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -236,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qn-Vb-rfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-486" y="752"/>
+            <point key="canvasLocation" x="-487.19999999999999" y="751.57421289355329"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">

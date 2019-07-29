@@ -1,5 +1,5 @@
 //
-//  sleepViewController.swift
+//  SleepViewController.swift
 //  
 //
 //  Created by Ben Tsai on 7/23/19.
@@ -7,19 +7,30 @@
 
 import UIKit
 
-
+var currentSession = session(audio: "", soundPack: "")
+var totalTime : Float = 500.0
 
 class SleepViewController: UIViewController{
     
+    @IBAction func nextAction(_ sender: UIButton) {
+        print("next screen")
+    }
+    @IBOutlet weak var timerOutlet: UILabel!
+    
     let audio_context = gvr_audio_create(Int32(GVR_AUDIO_RENDERING_BINAURAL_HIGH_QUALITY.rawValue))
 
+    @IBAction func sliderAction(_ sender: UISlider) {
+        totalTime = sender.value * 1000.0
+        timerOutlet.text = "\(Int(totalTime)) Seconds"
+        if sender.value * 1000.0 == 1.0 {
+            timerOutlet.text = "\(Int(totalTime)) Second"
+        }
+    }
+    
     @IBOutlet weak var ambientTable: UITableView!
     @IBOutlet weak var soundpackTable: UITableView!
     
-    
-    var currentSession = session(audio: "", loudness: 0, soundPack: "")
-    
-    var audioArray = ["Ambient_Car", "River", "Goats", "Student Center"]
+    var audioArray = ["Ambient_Car", "River", "Goats"]
     var soundpackArray = ["Soothing", "Nature", "Others"]
     var audio1 = gvr_audio_source_id()
     var audio2 = gvr_audio_source_id()
@@ -42,12 +53,13 @@ class SleepViewController: UIViewController{
         self.ambientTable.isHidden = false
         
         audio1 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Ambient_Car.wav"))
-        gvr_audio_set_sound_volume(audiocontext.audio_context, audio1, 1)
+        gvr_audio_set_sound_volume(audiocontext.audio_context, audio1, 0.6)
         audio2 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "River.wav"))
-        gvr_audio_set_sound_volume(audiocontext.audio_context, audio2, 1)
+        gvr_audio_set_sound_volume(audiocontext.audio_context, audio2, 0.6)
         audio3 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Goats.wav"))
-        gvr_audio_set_sound_volume(audiocontext.audio_context, audio3, 1)
+        gvr_audio_set_sound_volume(audiocontext.audio_context, audio3, 0.3)
         
+        /*
         soundpack1_1 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Tapping.wav"))
         gvr_audio_set_sound_volume(audiocontext.audio_context, soundpack1_1, 1)
         soundpack1_2 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "UpTheWall.wav"))
@@ -55,14 +67,12 @@ class SleepViewController: UIViewController{
         soundpack1_3 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "TapMusicStand.wav"))
         gvr_audio_set_sound_volume(audiocontext.audio_context, soundpack1_3, 1)
 
-        print("Soundpack1")
         soundpack2_1 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Swing.wav"))
         gvr_audio_set_sound_volume(audiocontext.audio_context, soundpack2_1, 1)
         soundpack2_2 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Cracks.wav"))
         gvr_audio_set_sound_volume(audiocontext.audio_context, soundpack2_2, 1)
         soundpack2_3 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Water_Drops.wav"))
         gvr_audio_set_sound_volume(audiocontext.audio_context, soundpack2_3, 1)
-        print("Soundpack2")
 
         soundpack3_1 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Engine.wav"))
         gvr_audio_set_sound_volume(audiocontext.audio_context, soundpack3_1, 1)
@@ -70,8 +80,7 @@ class SleepViewController: UIViewController{
         gvr_audio_set_sound_volume(audiocontext.audio_context, soundpack3_2, 1)
         soundpack3_3 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Cocowater.wav"))
         gvr_audio_set_sound_volume(audiocontext.audio_context, soundpack3_3, 1)
-        print("Soundpack3")
-
+        */
 
         
         /*
@@ -153,17 +162,17 @@ extension SleepViewController: UITableViewDataSource, UITableViewDelegate {
             
             let file : String = "\((cell?.textLabel?.text)!)_Preview.wav"
             
-            
             print(file)
             if file != "Student Center_Preview.wav"{
                 let audio = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, file))
-                currentSession.audio = file
+                currentSession.audio = (cell?.textLabel?.text)!
                 gvr_audio_set_sound_object_position(audiocontext.audio_context, audio, 0, 0, 0)
-                gvr_audio_play_sound(audiocontext.audio_context, audio, true)
-                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5), execute: {
+                gvr_audio_play_sound(audiocontext.audio_context, audio, false)
+                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
                     gvr_audio_stop_sound(audiocontext.audio_context, audio)
             })
             }
+                /*
             else {
                 let audio = gvr_audio_source_id(gvr_audio_create_soundfield(audiocontext.audio_context, "StudentCenter.WAV"))
                 currentSession.audio = "StudentCenter.WAV"
@@ -175,6 +184,7 @@ extension SleepViewController: UITableViewDataSource, UITableViewDelegate {
                     gvr_audio_stop_sound(audiocontext.audio_context, audio)
             })
             }
+             */
         }
         else if tableView == soundpackTable{
             if (cell?.textLabel?.text)! == "Soothing"{

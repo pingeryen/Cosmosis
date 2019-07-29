@@ -20,11 +20,6 @@ class ViewController: UIViewController {
         sound = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Ambient_Car.wav")) //ambisonic
         gvr_audio_set_sound_volume(audiocontext.audio_context, sound, 0.5)
         
-
-        
-        
-        
-        
         //let sound2 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Air Con.wav"))//monosound
 
         //Create new sounds
