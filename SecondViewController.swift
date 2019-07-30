@@ -7,8 +7,11 @@
 
 import UIKit
 
+
+
+var lastLogin = setup(lastSession: "07/23", duration: 500.0, stressLevel: 5)
+
 class SecondViewController: UIViewController {
-    
     
 
     
@@ -19,24 +22,9 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var durationOutlet: UILabel!
     @IBOutlet weak var stressLevelOutlet: UILabel!
     
-    class setup{
-        var lastSession : String
-        var duration : Double
-        var stressLevel : Int
-        init(lastSession: String, duration: Double, stressLevel: Int){
-            self.lastSession = lastSession
-            self.duration = duration
-            self.stressLevel = stressLevel
-        }
-        func time() -> String{
-            let min = Int(self.duration / 60.0)
-            let sec = Int(Int(self.duration) % 60)
-            return "\(min):\(sec)"
-            
-        }
-    }
     
-    var lastLogin = setup(lastSession: "07/23", duration: 500.0, stressLevel: 5)
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

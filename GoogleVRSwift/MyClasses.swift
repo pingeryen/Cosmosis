@@ -14,21 +14,27 @@ class audiocontext{
 
 struct session{
     var audio : String
-    var soundPack : String
-    init(audio: String, soundPack: String){
+    var soundPack : [String]
+    init(audio: String, soundPack: [String]){
         self.audio = audio
         self.soundPack = soundPack
     }
 }
 
-class sessionData{
-    var date : String
-    var duration : Int
-    var stress: Int
-    init(date : String, duration : Int, stress : Int){
-        self.date = date
+class setup{
+    var lastSession : String
+    var duration : Double
+    var stressLevel : Int
+    init(lastSession: String, duration: Double, stressLevel: Int){
+        self.lastSession = lastSession
         self.duration = duration
-        self.stress = stress
+        self.stressLevel = stressLevel
+    }
+    func time() -> String{
+        let min = Int(self.duration / 60.0)
+        let sec = Int(Int(self.duration) % 60)
+        return "\(min):\(sec)"
+        
     }
 }
 

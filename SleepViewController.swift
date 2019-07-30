@@ -7,10 +7,31 @@
 
 import UIKit
 
-var currentSession = session(audio: "", soundPack: "")
+
+var file : String = ""
+var currentSession = session(audio: "Ambient_Car.wav", soundPack: soundpack1)
 var totalTime : Float = 500.0
+var fileName : String = ""
+var audio = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, file))
+var soundpack1 = ["Tapping.wav", "UpTheWall.wav", "TapMusicStand.wav"]
+var soundpack2 = ["Swing.wav", "Cracks.wav", "Water_Drops.wav"]
+var soundpack3 = ["Engine.wav", "Goose.wav", "Cocowater.wav"]
 
 class SleepViewController: UIViewController{
+    
+    
+    
+    @IBAction func cancelAction(_ sender: UIButton) {
+        gvr_audio_stop_sound(audiocontext.audio_context, audio)
+    }
+    
+    func playSound(file : String){
+        gvr_audio_set_sound_object_position(audiocontext.audio_context, audio, 0, 0, 0)
+        gvr_audio_play_sound(audiocontext.audio_context, audio, false)
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
+            gvr_audio_stop_sound(audiocontext.audio_context, audio)
+        })
+    }
     
     @IBAction func nextAction(_ sender: UIButton) {
         print("next screen")
@@ -28,14 +49,16 @@ class SleepViewController: UIViewController{
     }
     
     @IBOutlet weak var ambientTable: UITableView!
-    @IBOutlet weak var soundpackTable: UITableView!
     
-    var audioArray = ["Ambient_Car", "River", "Goats"]
+    
+    var audioArray = ["Ambient_Car + Soothing","Ambient_Car + Nature","Ambient_Car + Others", "River + Soothing", "River + Nature", "River + Others", "Goats + Soothing", "Goats + Nature", "Goats + Others"]
     var soundpackArray = ["Soothing", "Nature", "Others"]
     var audio1 = gvr_audio_source_id()
     var audio2 = gvr_audio_source_id()
     var audio3 = gvr_audio_source_id()
     
+    
+    /*
     var soundpack1_1 = gvr_audio_source_id()
     var soundpack1_2 = gvr_audio_source_id()
     var soundpack1_3 = gvr_audio_source_id()
@@ -47,19 +70,21 @@ class SleepViewController: UIViewController{
     var soundpack3_1 = gvr_audio_source_id()
     var soundpack3_2 = gvr_audio_source_id()
     var soundpack3_3 = gvr_audio_source_id()
+    */
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.ambientTable.isHidden = false
         
+        /*
         audio1 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Ambient_Car.wav"))
-        gvr_audio_set_sound_volume(audiocontext.audio_context, audio1, 0.6)
+        gvr_audio_set_sound_volume(audiocontext.audio_context, audio1, 1)
         audio2 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "River.wav"))
         gvr_audio_set_sound_volume(audiocontext.audio_context, audio2, 0.6)
         audio3 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Goats.wav"))
-        gvr_audio_set_sound_volume(audiocontext.audio_context, audio3, 0.3)
+        gvr_audio_set_sound_volume(audiocontext.audio_context, audio3, 0.7)
         
-        /*
+        
         soundpack1_1 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "Tapping.wav"))
         gvr_audio_set_sound_volume(audiocontext.audio_context, soundpack1_1, 1)
         soundpack1_2 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, "UpTheWall.wav"))
@@ -139,39 +164,81 @@ class SleepViewController: UIViewController{
 extension SleepViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if tableView == soundpackTable{
-            return soundpackArray.count
-        }
         return audioArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        if tableView == soundpackTable{
-            cell.textLabel?.text = soundpackArray[indexPath.row]
-            return cell
-        }
         cell.textLabel?.text = audioArray[indexPath.row]
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
+        fileName = (cell?.textLabel?.text)!
         
-        if tableView == ambientTable{
+        if fileName == "Ambient_Car + Soothing"{
+            file = "Ambient_Car_Preview.wav"
+            playSound(file: file)
+            currentSession.audio = "Ambient_Car.wav"
+            currentSession.soundPack = soundpack1
+        }
             
-            let file : String = "\((cell?.textLabel?.text)!)_Preview.wav"
-            
-            print(file)
-            if file != "Student Center_Preview.wav"{
-                let audio = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, file))
-                currentSession.audio = (cell?.textLabel?.text)!
-                gvr_audio_set_sound_object_position(audiocontext.audio_context, audio, 0, 0, 0)
-                gvr_audio_play_sound(audiocontext.audio_context, audio, false)
-                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
-                    gvr_audio_stop_sound(audiocontext.audio_context, audio)
-            })
-            }
+        else if fileName == "Ambient_Car + Nature"{
+            file = "Ambient_Car_Preview.wav"
+            playSound(file: file)
+            currentSession.audio = "Ambient_Car.wav"
+            currentSession.soundPack = soundpack2
+
+        }
+        else if fileName == "Ambient_Car + Others"{
+            file = "Ambient_Car_Preview.wav"
+            playSound(file: file)
+            currentSession.audio = "Ambient_Car.wav"
+            currentSession.soundPack = soundpack3
+        }
+        else if fileName == "River + Soothing"{
+            file = "River_Preview.wav"
+            playSound(file: file)
+            currentSession.audio = "River.wav"
+            currentSession.soundPack = soundpack1
+        }
+        else if fileName == "River + Nature"{
+            file = "River_Preview.wav"
+            playSound(file: file)
+            currentSession.audio = "River.wav"
+            currentSession.soundPack = soundpack2
+        }
+        else if fileName == "River + Others"{
+            file = "River_Preview.wav"
+            playSound(file: file)
+            currentSession.audio = "River.wav"
+            currentSession.soundPack = soundpack3
+        }
+        else if fileName == "Goats + Soothing"{
+            file = "Goats_Preview.wav"
+            playSound(file: file)
+            currentSession.audio = "Goats.wav"
+            currentSession.soundPack = soundpack1
+        }
+        else if fileName == "Goats + Nature"{
+            file = "Goats_Preview.wav"
+            playSound(file: file)
+            currentSession.audio = "Goats.wav"
+            currentSession.soundPack = soundpack2
+        }
+        else if fileName == "Goats + Others"{
+            file = "Goats_Preview.wav"
+            playSound(file: file)
+            currentSession.audio = "Goats.wav"
+            currentSession.soundPack = soundpack3
+        }
+        
+        /*
+        fileName = file
+        audio = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, file))
+        playSound(file: file)
+        */
                 /*
             else {
                 let audio = gvr_audio_source_id(gvr_audio_create_soundfield(audiocontext.audio_context, "StudentCenter.WAV"))
@@ -185,7 +252,8 @@ extension SleepViewController: UITableViewDataSource, UITableViewDelegate {
             })
             }
              */
-        }
+    }
+            /*
         else if tableView == soundpackTable{
             if (cell?.textLabel?.text)! == "Soothing"{
                 print("Soothing")
@@ -226,6 +294,7 @@ extension SleepViewController: UITableViewDataSource, UITableViewDelegate {
                 })
                  */
             }
+                
             else if (cell?.textLabel?.text)! == "Others"{
                 print("Others")
                 currentSession.soundPack = "Others"
@@ -245,9 +314,11 @@ extension SleepViewController: UITableViewDataSource, UITableViewDelegate {
                     gvr_audio_stop_sound(audiocontext.audio_context, self.soundpack3_3)
                 })
                  */
+ 
             }
+ 
         }
-        
+        */
     }
     
-}
+
