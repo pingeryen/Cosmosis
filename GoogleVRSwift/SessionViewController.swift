@@ -11,7 +11,6 @@ import UIKit
 
 class SessionViewController: UIViewController {
     
-    
     @IBAction func stopAction(_ sender: UIButton) {
         gvr_audio_stop_sound(audiocontext.audio_context, sound1)
         gvr_audio_stop_sound(audiocontext.audio_context, sound2)
@@ -19,6 +18,7 @@ class SessionViewController: UIViewController {
         gvr_audio_stop_sound(audiocontext.audio_context, audio1)
         gvr_audio_stop_sound(audiocontext.audio_context, audio2)
         gvr_audio_stop_sound(audiocontext.audio_context, audio3)
+        
     }
     
     

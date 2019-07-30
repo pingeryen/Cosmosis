@@ -21,3 +21,14 @@ struct session{
     }
 }
 
+class sessionData{
+    var date : String
+    var duration : Int
+    var stress: Int
+    init(date : String, duration : Int, stress : Int){
+        self.date = date
+        self.duration = duration
+        self.stress = stress
+    }
+}
+
