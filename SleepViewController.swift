@@ -19,26 +19,26 @@ var soundpack3 = ["Engine.wav", "Goose.wav", "Cocowater.wav"]
 
 class SleepViewController: UIViewController{
     
-    
+    let audio_context = gvr_audio_create(Int32(GVR_AUDIO_RENDERING_BINAURAL_HIGH_QUALITY.rawValue))
     
     @IBAction func cancelAction(_ sender: UIButton) {
         gvr_audio_stop_sound(audiocontext.audio_context, audio)
     }
     
     func playSound(file : String){
+        audio = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, file))
         gvr_audio_set_sound_object_position(audiocontext.audio_context, audio, 0, 0, 0)
         gvr_audio_play_sound(audiocontext.audio_context, audio, false)
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
-            gvr_audio_stop_sound(audiocontext.audio_context, audio)
-        })
     }
     
     @IBAction func nextAction(_ sender: UIButton) {
         print("next screen")
+        gvr_audio_stop_sound(audiocontext.audio_context, audio)
+
     }
     @IBOutlet weak var timerOutlet: UILabel!
     
-    let audio_context = gvr_audio_create(Int32(GVR_AUDIO_RENDERING_BINAURAL_HIGH_QUALITY.rawValue))
+    
 
     @IBAction func sliderAction(_ sender: UISlider) {
         totalTime = sender.value * 1000.0
@@ -176,6 +176,8 @@ extension SleepViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
         fileName = (cell?.textLabel?.text)!
+        gvr_audio_stop_sound(audiocontext.audio_context, audio)
+
         
         if fileName == "Ambient_Car + Soothing"{
             file = "Ambient_Car_Preview.wav"

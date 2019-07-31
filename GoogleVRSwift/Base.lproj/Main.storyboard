@@ -315,8 +315,7 @@
         <image name="Title.png" width="1249" height="382"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pLW-VF-rsO"/>
-        <segue reference="fGQ-7s-Xpp"/>
+        <segue reference="pKX-mG-OyM"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.46240351699999999" blue="0.048643999639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

@@ -11,19 +11,20 @@ import UIKit
 
 var timeElapsed : Int = 0
 
+
 class SessionViewController: UIViewController {
     
+    var audioArray: [String] = currentSession.soundPack
+    
     @IBAction func stopAction(_ sender: UIButton) {
-        gvr_audio_stop_sound(audiocontext.audio_context, sound1)
-        gvr_audio_stop_sound(audiocontext.audio_context, sound2)
-        gvr_audio_stop_sound(audiocontext.audio_context, sound3)
-        gvr_audio_stop_sound(audiocontext.audio_context, targetAudio)
+        gvr_audio_stop_sound(audio_context, sound1)
+        gvr_audio_stop_sound(audio_context, sound2)
+        gvr_audio_stop_sound(audio_context, sound3)
+        gvr_audio_stop_sound(audio_context, targetAudio)
         lastLogin.duration = Double(timeElapsed)
         lastLogin.lastSession = "7/30"
         lastLogin.stressLevel = 3
         print(lastLogin.lastSession)
-        
-        lastSessionOutlet
         
         stopTimer()
     }
@@ -43,9 +44,9 @@ class SessionViewController: UIViewController {
     
     var timerSound : Timer?
     
-    var mark1 : Int = 5
-    var mark2 : Int = 6
-    var mark3 : Int = 7
+    var mark1 : Int = 2
+    var mark2 : Int = 3
+    var mark3 : Int = 4
     
     var counterSound : Float = 0.0
 
@@ -66,25 +67,34 @@ class SessionViewController: UIViewController {
         var coord : [Float]
         
         if Int(counter) > mark1 {
+            mark1 = Int(counter) + randInt3To10()
             print("mark1")
             coord = randFloat()
+            sound1 = gvr_audio_source_id(gvr_audio_create_sound_object(audio_context, audioArray[0]))
+            gvr_audio_set_sound_volume(audio_context, sound1, 0.3)
             gvr_audio_set_sound_object_position(audio_context, sound1, coord[0], coord[1], coord[2])
             gvr_audio_play_sound(audio_context, sound1, false)
-            mark1 = Int(counter) + randInt3To10()
+            
         }
-        else if Int(counter) > mark2 {
+        if Int(counter) > mark2 {
+            mark2 = Int(counter) + randInt3To10()
             print("mark2")
             coord = randFloat()
+            sound2 = gvr_audio_source_id(gvr_audio_create_sound_object(audio_context, audioArray[1]))
+            gvr_audio_set_sound_volume(audio_context, sound2, 1)
             gvr_audio_set_sound_object_position(audio_context, sound2, coord[0], coord[1], coord[2])
-            gvr_audio_play_sound(audio_context, sound1, false)
-            mark2 = Int(counter) + randInt3To10()
+            gvr_audio_play_sound(audio_context, sound2, false)
+            
         }
-        else if Int(counter) > mark3 {
+        if Int(counter) > mark3 {
+            mark3 = Int(counter) + randInt3To10()
             print("mark3")
             coord = randFloat()
+            sound3 = gvr_audio_source_id(gvr_audio_create_sound_object(audio_context, audioArray[2]))
+            gvr_audio_set_sound_volume(audio_context, sound3, 0.6)
             gvr_audio_set_sound_object_position(audio_context, sound3, coord[0], coord[1], coord[2])
-            gvr_audio_play_sound(audio_context, sound1, false)
-            mark3 = Int(counter) + randInt3To10()
+            gvr_audio_play_sound(audio_context, sound3, false)
+            
         }
         
     }
@@ -113,15 +123,13 @@ class SessionViewController: UIViewController {
     func randomizeAudio(audio: [String]){
         
         print("randomize audio")
-        print(audio[0])
-        print(audio[1])
-        print(audio[2])
         
-        sound1 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, audio[0]))
+        
+        sound1 = gvr_audio_source_id(gvr_audio_create_sound_object(audio_context, audio[0]))
         gvr_audio_set_sound_volume(audio_context, sound1, 1)
-        sound2 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, audio[1]))
+        sound2 = gvr_audio_source_id(gvr_audio_create_sound_object(audio_context, audio[1]))
         gvr_audio_set_sound_volume(audio_context, sound2, 1)
-        sound3 = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, audio[2]))
+        sound3 = gvr_audio_source_id(gvr_audio_create_sound_object(audio_context, audio[2]))
         gvr_audio_set_sound_volume(audio_context, sound3, 1)
         
         mark1 = randInt3To10()
@@ -191,11 +199,11 @@ class SessionViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: aSelector, userInfo: nil, repeats: true)
         
         print(currentSession.audio)
-        targetAudio = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, currentSession.audio))
+        targetAudio = gvr_audio_source_id(gvr_audio_create_sound_object(audio_context, currentSession.audio))
         print("set audio")
         gvr_audio_set_sound_object_position(audio_context, targetAudio, 0, 0, 0)
-        gvr_audio_set_sound_volume(audiocontext.audio_context, targetAudio, 1)
-        gvr_audio_play_sound(audiocontext.audio_context, targetAudio, true)
+        gvr_audio_set_sound_volume(audio_context, targetAudio, 0.5)
+        gvr_audio_play_sound(audio_context, targetAudio, true)
         print("play audio")
         
         randomizeAudio(audio: currentSession.soundPack)

@@ -8,28 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		1F0D8A3F22F0E1500010AA45 /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A3E22F0E1500010AA45 /* Title.png */; };
+		1F0D8A5022F22BDE0010AA45 /* Ambient_Car_Preview.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4022F22BDD0010AA45 /* Ambient_Car_Preview.wav */; };
+		1F0D8A5122F22BDE0010AA45 /* Ambient_Car.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4122F22BDD0010AA45 /* Ambient_Car.wav */; };
+		1F0D8A5222F22BDE0010AA45 /* Goats.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4222F22BDD0010AA45 /* Goats.wav */; };
+		1F0D8A5322F22BDE0010AA45 /* Goose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4322F22BDD0010AA45 /* Goose.wav */; };
+		1F0D8A5422F22BDE0010AA45 /* Cocowater.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4422F22BDD0010AA45 /* Cocowater.wav */; };
+		1F0D8A5522F22BDE0010AA45 /* UpTheWall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4522F22BDE0010AA45 /* UpTheWall.wav */; };
+		1F0D8A5622F22BDE0010AA45 /* Goats_Preview.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4622F22BDE0010AA45 /* Goats_Preview.wav */; };
+		1F0D8A5722F22BDE0010AA45 /* Water_Drops.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4722F22BDE0010AA45 /* Water_Drops.wav */; };
+		1F0D8A5822F22BDE0010AA45 /* River.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4822F22BDE0010AA45 /* River.wav */; };
+		1F0D8A5922F22BDE0010AA45 /* River_Preview.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4922F22BDE0010AA45 /* River_Preview.wav */; };
+		1F0D8A5A22F22BDE0010AA45 /* Clicky.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4A22F22BDE0010AA45 /* Clicky.wav */; };
+		1F0D8A5B22F22BDE0010AA45 /* Engine.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4B22F22BDE0010AA45 /* Engine.wav */; };
+		1F0D8A5C22F22BDE0010AA45 /* TapMusicStand.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4C22F22BDE0010AA45 /* TapMusicStand.wav */; };
+		1F0D8A5D22F22BDE0010AA45 /* Tapping.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4D22F22BDE0010AA45 /* Tapping.wav */; };
+		1F0D8A5E22F22BDE0010AA45 /* Swing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4E22F22BDE0010AA45 /* Swing.wav */; };
+		1F0D8A5F22F22BDE0010AA45 /* Cracks.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D8A4F22F22BDE0010AA45 /* Cracks.wav */; };
 		1F25E59522E79C4E00AC1B34 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25E59422E79C4D00AC1B34 /* SecondViewController.swift */; };
 		1F25E59B22E7DED000AC1B34 /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25E59A22E7DED000AC1B34 /* SleepViewController.swift */; };
-		1F25E5A322E8C85E00AC1B34 /* Ambient_Car.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5A222E8C85E00AC1B34 /* Ambient_Car.wav */; };
-		1F25E5A522E8C86500AC1B34 /* Goats.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5A422E8C86500AC1B34 /* Goats.wav */; };
 		1F25E5A922E8CF6100AC1B34 /* Start.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5A822E8CF6100AC1B34 /* Start.png */; };
 		1F25E5AB22EA12C600AC1B34 /* MyClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25E5AA22EA12C600AC1B34 /* MyClasses.swift */; };
-		1F25E5AD22EA2CA900AC1B34 /* Ambient_Car_Preview.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5AC22EA2CA800AC1B34 /* Ambient_Car_Preview.wav */; };
-		1F25E5B122EA2CBA00AC1B34 /* Goats_Preview.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5B022EA2CBA00AC1B34 /* Goats_Preview.wav */; };
-		1F25E5B322EA4EFE00AC1B34 /* Engine.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5B222EA4EFE00AC1B34 /* Engine.wav */; };
-		1F25E5B522EA4F1200AC1B34 /* Goose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5B422EA4F1200AC1B34 /* Goose.wav */; };
-		1F25E5BE22EA521800AC1B34 /* Water_Drops.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5BA22EA521800AC1B34 /* Water_Drops.wav */; };
-		1F25E5BF22EA521800AC1B34 /* Cracks.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5BB22EA521800AC1B34 /* Cracks.wav */; };
-		1F25E5C122EA531600AC1B34 /* UpTheWall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5C022EA531600AC1B34 /* UpTheWall.wav */; };
-		1F25E5C322EA537900AC1B34 /* TapMusicStand.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5C222EA537900AC1B34 /* TapMusicStand.wav */; };
-		1F25E5C522EA53AD00AC1B34 /* Tapping.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5C422EA53AC00AC1B34 /* Tapping.wav */; };
-		1F25E5C722EA541600AC1B34 /* Cocowater.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5C622EA541500AC1B34 /* Cocowater.wav */; };
 		1F25E5C922EA5A4300AC1B34 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25E5C822EA5A4300AC1B34 /* SessionViewController.swift */; };
-		1F25E5CD22EF580400AC1B34 /* River.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5CB22EF580400AC1B34 /* River.wav */; };
-		1F25E5CE22EF580400AC1B34 /* River_Preview.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5CC22EF580400AC1B34 /* River_Preview.wav */; };
 		1F25E5D222EF5F8400AC1B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F25E5D122EF5F8300AC1B34 /* Assets.xcassets */; };
-		1F32311922EF68230092B843 /* Swing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F32311822EF68230092B843 /* Swing.wav */; };
-		1F46496E22E63165004E9A9A /* 190717_032.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 1F46496D22E63165004E9A9A /* 190717_032.WAV */; };
 		1F55E02222E56A7C007F9D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55E02122E56A7C007F9D59 /* AppDelegate.swift */; };
 		1F55E02422E56A7C007F9D59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55E02322E56A7C007F9D59 /* ViewController.swift */; };
 		1F55E02722E56A7C007F9D59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F55E02522E56A7C007F9D59 /* Main.storyboard */; };
@@ -44,28 +44,28 @@
 /* Begin PBXFileReference section */
 		142F5DFF41E339CD574F82FF /* Pods_GoogleVRSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleVRSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0D8A3E22F0E1500010AA45 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title.png; sourceTree = "<group>"; };
+		1F0D8A4022F22BDD0010AA45 /* Ambient_Car_Preview.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ambient_Car_Preview.wav; sourceTree = "<group>"; };
+		1F0D8A4122F22BDD0010AA45 /* Ambient_Car.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ambient_Car.wav; sourceTree = "<group>"; };
+		1F0D8A4222F22BDD0010AA45 /* Goats.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Goats.wav; sourceTree = "<group>"; };
+		1F0D8A4322F22BDD0010AA45 /* Goose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Goose.wav; sourceTree = "<group>"; };
+		1F0D8A4422F22BDD0010AA45 /* Cocowater.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cocowater.wav; sourceTree = "<group>"; };
+		1F0D8A4522F22BDE0010AA45 /* UpTheWall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = UpTheWall.wav; sourceTree = "<group>"; };
+		1F0D8A4622F22BDE0010AA45 /* Goats_Preview.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Goats_Preview.wav; sourceTree = "<group>"; };
+		1F0D8A4722F22BDE0010AA45 /* Water_Drops.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Water_Drops.wav; sourceTree = "<group>"; };
+		1F0D8A4822F22BDE0010AA45 /* River.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = River.wav; sourceTree = "<group>"; };
+		1F0D8A4922F22BDE0010AA45 /* River_Preview.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = River_Preview.wav; sourceTree = "<group>"; };
+		1F0D8A4A22F22BDE0010AA45 /* Clicky.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Clicky.wav; sourceTree = "<group>"; };
+		1F0D8A4B22F22BDE0010AA45 /* Engine.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Engine.wav; sourceTree = "<group>"; };
+		1F0D8A4C22F22BDE0010AA45 /* TapMusicStand.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = TapMusicStand.wav; sourceTree = "<group>"; };
+		1F0D8A4D22F22BDE0010AA45 /* Tapping.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tapping.wav; sourceTree = "<group>"; };
+		1F0D8A4E22F22BDE0010AA45 /* Swing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Swing.wav; sourceTree = "<group>"; };
+		1F0D8A4F22F22BDE0010AA45 /* Cracks.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cracks.wav; sourceTree = "<group>"; };
 		1F25E59422E79C4D00AC1B34 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../SecondViewController.swift; sourceTree = "<group>"; };
 		1F25E59A22E7DED000AC1B34 /* SleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SleepViewController.swift; path = ../SleepViewController.swift; sourceTree = "<group>"; };
-		1F25E5A222E8C85E00AC1B34 /* Ambient_Car.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ambient_Car.wav; sourceTree = "<group>"; };
-		1F25E5A422E8C86500AC1B34 /* Goats.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Goats.wav; sourceTree = "<group>"; };
 		1F25E5A822E8CF6100AC1B34 /* Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start.png; sourceTree = "<group>"; };
 		1F25E5AA22EA12C600AC1B34 /* MyClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClasses.swift; sourceTree = "<group>"; };
-		1F25E5AC22EA2CA800AC1B34 /* Ambient_Car_Preview.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ambient_Car_Preview.wav; sourceTree = "<group>"; };
-		1F25E5B022EA2CBA00AC1B34 /* Goats_Preview.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Goats_Preview.wav; sourceTree = "<group>"; };
-		1F25E5B222EA4EFE00AC1B34 /* Engine.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Engine.wav; sourceTree = "<group>"; };
-		1F25E5B422EA4F1200AC1B34 /* Goose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Goose.wav; sourceTree = "<group>"; };
-		1F25E5BA22EA521800AC1B34 /* Water_Drops.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Water_Drops.wav; sourceTree = "<group>"; };
-		1F25E5BB22EA521800AC1B34 /* Cracks.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cracks.wav; sourceTree = "<group>"; };
-		1F25E5C022EA531600AC1B34 /* UpTheWall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = UpTheWall.wav; sourceTree = "<group>"; };
-		1F25E5C222EA537900AC1B34 /* TapMusicStand.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = TapMusicStand.wav; sourceTree = "<group>"; };
-		1F25E5C422EA53AC00AC1B34 /* Tapping.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tapping.wav; sourceTree = "<group>"; };
-		1F25E5C622EA541500AC1B34 /* Cocowater.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cocowater.wav; sourceTree = "<group>"; };
 		1F25E5C822EA5A4300AC1B34 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
-		1F25E5CB22EF580400AC1B34 /* River.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = River.wav; sourceTree = "<group>"; };
-		1F25E5CC22EF580400AC1B34 /* River_Preview.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = River_Preview.wav; sourceTree = "<group>"; };
 		1F25E5D122EF5F8300AC1B34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1F32311822EF68230092B843 /* Swing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Swing.wav; sourceTree = "<group>"; };
-		1F46496D22E63165004E9A9A /* 190717_032.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 190717_032.WAV; sourceTree = "<group>"; };
 		1F55E01E22E56A7C007F9D59 /* GoogleVRSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleVRSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F55E02122E56A7C007F9D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F55E02322E56A7C007F9D59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,22 +128,22 @@
 				1F25E5C822EA5A4300AC1B34 /* SessionViewController.swift */,
 				1F25E59A22E7DED000AC1B34 /* SleepViewController.swift */,
 				1F55E02322E56A7C007F9D59 /* ViewController.swift */,
-				1F25E5AC22EA2CA800AC1B34 /* Ambient_Car_Preview.wav */,
-				1F25E5A222E8C85E00AC1B34 /* Ambient_Car.wav */,
-				1F25E5C622EA541500AC1B34 /* Cocowater.wav */,
-				1F25E5BB22EA521800AC1B34 /* Cracks.wav */,
-				1F25E5B222EA4EFE00AC1B34 /* Engine.wav */,
-				1F25E5B022EA2CBA00AC1B34 /* Goats_Preview.wav */,
-				1F25E5A422E8C86500AC1B34 /* Goats.wav */,
-				1F25E5B422EA4F1200AC1B34 /* Goose.wav */,
-				1F25E5CC22EF580400AC1B34 /* River_Preview.wav */,
-				1F25E5CB22EF580400AC1B34 /* River.wav */,
-				1F32311822EF68230092B843 /* Swing.wav */,
-				1F25E5C222EA537900AC1B34 /* TapMusicStand.wav */,
-				1F25E5C422EA53AC00AC1B34 /* Tapping.wav */,
-				1F25E5C022EA531600AC1B34 /* UpTheWall.wav */,
-				1F25E5BA22EA521800AC1B34 /* Water_Drops.wav */,
-				1F46496D22E63165004E9A9A /* 190717_032.WAV */,
+				1F0D8A4022F22BDD0010AA45 /* Ambient_Car_Preview.wav */,
+				1F0D8A4122F22BDD0010AA45 /* Ambient_Car.wav */,
+				1F0D8A4A22F22BDE0010AA45 /* Clicky.wav */,
+				1F0D8A4422F22BDD0010AA45 /* Cocowater.wav */,
+				1F0D8A4F22F22BDE0010AA45 /* Cracks.wav */,
+				1F0D8A4B22F22BDE0010AA45 /* Engine.wav */,
+				1F0D8A4622F22BDE0010AA45 /* Goats_Preview.wav */,
+				1F0D8A4222F22BDD0010AA45 /* Goats.wav */,
+				1F0D8A4322F22BDD0010AA45 /* Goose.wav */,
+				1F0D8A4922F22BDE0010AA45 /* River_Preview.wav */,
+				1F0D8A4822F22BDE0010AA45 /* River.wav */,
+				1F0D8A4E22F22BDE0010AA45 /* Swing.wav */,
+				1F0D8A4C22F22BDE0010AA45 /* TapMusicStand.wav */,
+				1F0D8A4D22F22BDE0010AA45 /* Tapping.wav */,
+				1F0D8A4522F22BDE0010AA45 /* UpTheWall.wav */,
+				1F0D8A4722F22BDE0010AA45 /* Water_Drops.wav */,
 				1F25E5D122EF5F8300AC1B34 /* Assets.xcassets */,
 				1F55E02A22E56A7D007F9D59 /* LaunchScreen.storyboard */,
 				1F55E02522E56A7C007F9D59 /* Main.storyboard */,
@@ -227,31 +227,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F25E5C522EA53AD00AC1B34 /* Tapping.wav in Resources */,
-				1F25E5AD22EA2CA900AC1B34 /* Ambient_Car_Preview.wav in Resources */,
-				1F25E5B122EA2CBA00AC1B34 /* Goats_Preview.wav in Resources */,
 				1FA6588422F0B003009FC4E3 /* PlanSession.png in Resources */,
-				1F25E5B322EA4EFE00AC1B34 /* Engine.wav in Resources */,
 				1F25E5D222EF5F8400AC1B34 /* Assets.xcassets in Resources */,
-				1F25E5A322E8C85E00AC1B34 /* Ambient_Car.wav in Resources */,
-				1F25E5A522E8C86500AC1B34 /* Goats.wav in Resources */,
-				1F25E5C322EA537900AC1B34 /* TapMusicStand.wav in Resources */,
+				1F0D8A5B22F22BDE0010AA45 /* Engine.wav in Resources */,
 				1FA6588822F0C059009FC4E3 /* Stop.png in Resources */,
-				1F25E5BF22EA521800AC1B34 /* Cracks.wav in Resources */,
+				1F0D8A5922F22BDE0010AA45 /* River_Preview.wav in Resources */,
+				1F0D8A5E22F22BDE0010AA45 /* Swing.wav in Resources */,
+				1F0D8A5C22F22BDE0010AA45 /* TapMusicStand.wav in Resources */,
+				1F0D8A5722F22BDE0010AA45 /* Water_Drops.wav in Resources */,
+				1F0D8A5522F22BDE0010AA45 /* UpTheWall.wav in Resources */,
 				1F0D8A3F22F0E1500010AA45 /* Title.png in Resources */,
+				1F0D8A5322F22BDE0010AA45 /* Goose.wav in Resources */,
 				1FA6588022F0ACFA009FC4E3 /* StartSession.JPG in Resources */,
 				1FA6588622F0B0E8009FC4E3 /* Home.JPG in Resources */,
-				1F25E5C122EA531600AC1B34 /* UpTheWall.wav in Resources */,
-				1F46496E22E63165004E9A9A /* 190717_032.WAV in Resources */,
 				1F25E5A922E8CF6100AC1B34 /* Start.png in Resources */,
+				1F0D8A5222F22BDE0010AA45 /* Goats.wav in Resources */,
+				1F0D8A5022F22BDE0010AA45 /* Ambient_Car_Preview.wav in Resources */,
+				1F0D8A5122F22BDE0010AA45 /* Ambient_Car.wav in Resources */,
+				1F0D8A5622F22BDE0010AA45 /* Goats_Preview.wav in Resources */,
+				1F0D8A5D22F22BDE0010AA45 /* Tapping.wav in Resources */,
 				1F55E02C22E56A7D007F9D59 /* LaunchScreen.storyboard in Resources */,
-				1F25E5C722EA541600AC1B34 /* Cocowater.wav in Resources */,
-				1F25E5BE22EA521800AC1B34 /* Water_Drops.wav in Resources */,
-				1F25E5CD22EF580400AC1B34 /* River.wav in Resources */,
-				1F25E5CE22EF580400AC1B34 /* River_Preview.wav in Resources */,
-				1F25E5B522EA4F1200AC1B34 /* Goose.wav in Resources */,
+				1F0D8A5F22F22BDE0010AA45 /* Cracks.wav in Resources */,
+				1F0D8A5422F22BDE0010AA45 /* Cocowater.wav in Resources */,
+				1F0D8A5A22F22BDE0010AA45 /* Clicky.wav in Resources */,
 				1F55E02722E56A7C007F9D59 /* Main.storyboard in Resources */,
-				1F32311922EF68230092B843 /* Swing.wav in Resources */,
+				1F0D8A5822F22BDE0010AA45 /* River.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
