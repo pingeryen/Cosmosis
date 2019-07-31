@@ -21,6 +21,10 @@ class SessionViewController: UIViewController {
         lastLogin.duration = Double(timeElapsed)
         lastLogin.lastSession = "7/30"
         lastLogin.stressLevel = 3
+        print(lastLogin.lastSession)
+        
+        lastSessionOutlet
+        
         stopTimer()
     }
     
@@ -186,10 +190,10 @@ class SessionViewController: UIViewController {
         let aSelector : Selector = #selector(self.increaseCounter)
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: aSelector, userInfo: nil, repeats: true)
         
-        
         print(currentSession.audio)
         targetAudio = gvr_audio_source_id(gvr_audio_create_sound_object(audiocontext.audio_context, currentSession.audio))
         print("set audio")
+        gvr_audio_set_sound_object_position(audio_context, targetAudio, 0, 0, 0)
         gvr_audio_set_sound_volume(audiocontext.audio_context, targetAudio, 1)
         gvr_audio_play_sound(audiocontext.audio_context, targetAudio, true)
         print("play audio")
@@ -199,7 +203,10 @@ class SessionViewController: UIViewController {
         }
         
         // Do any additional setup after loading the view.
+ 
     }
+
+
     
 
     /*

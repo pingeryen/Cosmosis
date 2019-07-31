@@ -11,6 +11,8 @@ import UIKit
 
 var lastLogin = setup(lastSession: "07/23", duration: 500.0, stressLevel: 5)
 
+
+
 class SecondViewController: UIViewController {
     
 
@@ -22,28 +24,21 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var durationOutlet: UILabel!
     @IBOutlet weak var stressLevelOutlet: UILabel!
     
-    
-    
-    
+    func update(){
+        self.lastSessionOutlet.text = "Last Session: \(lastLogin.lastSession)"
+        self.durationOutlet.text = "Duration: \(lastLogin.time())"
+        self.stressLevelOutlet.text = "Stress Level: \(lastLogin.stressLevel)"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        lastSessionOutlet.text = "Last Session: " + lastLogin.lastSession
-        durationOutlet.text = "Duration: " + lastLogin.time()
-        stressLevelOutlet.text = "Stress Level: " + String(lastLogin.stressLevel)
-        
-        let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(changeSleepAction(_:)))
-        upSwipe.direction = .up
+        update()
+
         
 
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func changeSleepAction(_ sender: UISwipeGestureRecognizer) {
-        if (sender.direction == .up) {
-            
-        }
     }
     
 
@@ -57,4 +52,4 @@ class SecondViewController: UIViewController {
     }
     */
 
-}
+
