@@ -32,7 +32,6 @@ class SleepViewController: UIViewController{
     }
     
     @IBAction func nextAction(_ sender: UIButton) {
-        print("next screen")
         gvr_audio_stop_sound(audiocontext.audio_context, audio)
 
     }
